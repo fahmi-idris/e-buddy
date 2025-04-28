@@ -1,0 +1,25 @@
+{
+	"linter": {
+		"rules": {
+			"recommended": true,
+			"react": {
+				"recommended": true
+			},
+			"typescript": {
+				"recommended": true
+			},
+			"nursery": {
+				"recommended": true
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineWidth": 100
+	},
+	"files": {
+		"include": ["apps/**/*", "packages/**/*"]
+	}
+}

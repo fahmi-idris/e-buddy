@@ -1,0 +1,15 @@
+# Node.js dependencies
+node_modules/
+
+# Build outputs (if you're using TypeScript or bundling)
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local

@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+.pnpm-debug.log
+
+# Build outputs
+dist/
+.build/
+*.log
+
+# Next.js (frontend)
+.next/
+out/
+
+# Express.js (backend)
+logs/
+
+# Biome cache
+.biome/
+
+# Prettier cache
+.prettiercache/
+
+# TurboRepo cache (if using TurboRepo)
+.turbo/
+
+# IDE-specific folders
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# pnpm store (pnpm uses a global store for all packages)
+.pnpm/

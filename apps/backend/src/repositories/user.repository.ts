@@ -1,5 +1,6 @@
+import type { User } from "@e-buddy/shared";
+
 import { db } from "../config/firebase";
-import type { User } from "../entities/user.entity";
 
 const collection = db.collection("USERS");
 

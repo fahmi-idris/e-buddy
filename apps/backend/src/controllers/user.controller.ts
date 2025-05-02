@@ -1,5 +1,6 @@
+import type { User } from "@e-buddy/shared";
 import type { Request, Response } from "express";
-import type { User } from "../entities/user.entity";
+
 import { UserRepository } from "../repositories/user.repository";
 import { getRandomFloat, getRandomInt } from "../utils/formatter";
 import { createUserSchema } from "../validations";

@@ -1,16 +1,17 @@
 import { authOptions } from "@/config/auth";
+import { DashboardLayout } from "@/layouts";
+import { Dashboard } from "@/modules/dashboard";
 import { type AuthOptions, getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
-export default async function HomePage() {
+export default async function DashboardPage() {
 	const session = await getServerSession(authOptions as AuthOptions);
 
 	if (!session) redirect("/login");
 
 	return (
-		<div>
-			<h1>Welcome, {session.user?.name}</h1>
-			<img src={session.user?.image || ""} alt="user" />
-		</div>
+		<DashboardLayout>
+			<Dashboard />
+		</DashboardLayout>
 	);
 }

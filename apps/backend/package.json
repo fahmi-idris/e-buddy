@@ -15,12 +15,15 @@
 	"license": "ISC",
 	"packageManager": "pnpm@10.10.0",
 	"dependencies": {
+		"cors": "^2.8.5",
 		"dotenv": "^16.5.0",
 		"express": "^5.1.0",
 		"firebase-admin": "^13.3.0",
 		"zod": "^3.24.3"
 	},
 	"devDependencies": {
+		"@e-buddy/shared": "workspace:*",
+		"@types/cors": "^2.8.17",
 		"@types/express": "^5.0.1",
 		"@types/node": "^20.17.31",
 		"nodemon": "^3.1.10",

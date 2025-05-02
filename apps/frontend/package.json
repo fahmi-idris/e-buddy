@@ -22,8 +22,7 @@
 		"next": "15.3.1",
 		"next-auth": "^4.24.11",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"zustand": "^5.0.4"
+		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
 		"@e-buddy/shared": "workspace:*",

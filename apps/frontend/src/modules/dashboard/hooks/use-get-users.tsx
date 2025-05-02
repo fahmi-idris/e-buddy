@@ -4,11 +4,21 @@ import type { User } from "@e-buddy/shared";
 
 import axios from "@/utils/axios";
 import type { GridColDef } from "@mui/x-data-grid";
+import CreateUpdateUser from "../components/create-update-user";
 
 const columns: GridColDef[] = [
 	{ field: "firstName", headerName: "First name", width: 200 },
 	{ field: "lastName", headerName: "Last name", width: 200 },
 	{ field: "email", headerName: "Email", width: 200 },
+	{
+		field: "actions",
+		headerName: "Actions",
+		width: 150,
+		sortable: false,
+		renderCell: (params) => {
+			return <CreateUpdateUser type="update" {...params.row} />;
+		},
+	},
 ];
 
 const pagination = { page: 0, pageSize: 5 };

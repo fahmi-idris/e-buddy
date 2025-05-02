@@ -30,7 +30,7 @@ const CreateUpdateUser: FC<CreateUpdateUserProps> = ({
 	type = "create",
 	...props
 }) => {
-	const { mutate, isPending } = useCreateUpdateUser();
+	const { mutate, isPending } = useCreateUpdateUser(type);
 	const [open, setOpen] = useState(false);
 	const [firstName, setFirstName] = useState(props.firstName);
 	const [lastName, setLastName] = useState(props.lastName);
@@ -46,6 +46,7 @@ const CreateUpdateUser: FC<CreateUpdateUserProps> = ({
 	const onHandleSubmit = useCallback(() => {
 		mutate(
 			{
+				id: props.id,
 				firstName,
 				lastName,
 				email,
@@ -56,7 +57,7 @@ const CreateUpdateUser: FC<CreateUpdateUserProps> = ({
 				},
 			},
 		);
-	}, [mutate, onHandleClose, firstName, lastName, email]);
+	}, [mutate, onHandleClose, firstName, lastName, email, props.id]);
 
 	return (
 		<>
